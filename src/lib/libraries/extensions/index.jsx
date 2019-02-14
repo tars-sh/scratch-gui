@@ -17,6 +17,8 @@ import text2speechInsetImage from './text2speech-small.svg';
 import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
 
+import homeassistantImage from './homeassistant.png';
+
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
 import ev3PeripheralImage from './peripheral-connection/ev3/ev3-hub-illustration.svg';
@@ -233,5 +235,24 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
 
-    }
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Home Assistant"
+                description="Name for the 'Home Assistant' extension"
+                id="gui.extension.homeassistant.name"
+            />
+        ),
+        extensionId: 'homeassistant',
+        iconURL: homeassistantImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Home Assistant"
+                description="Description for the 'Home Assistant' extension"
+                id="gui.extension.homeassistant.description"
+            />
+        ),
+        featured: true
+    },
 ];
