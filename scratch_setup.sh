@@ -45,4 +45,4 @@ cd ..
 cd scratch-gui
 yarn install
 yarn link scratch-vm
-webpack-dev-server --disable-host-check # Access http://localhost:8601
+nohup webpack-dev-server --disable-host-check & # Access http://localhost:8601
